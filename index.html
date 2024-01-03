@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Segitiga</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="tabs">
+        <h1>Menghitung Luas & Keliling Segitiga</h1>
+        <div>
+            <button class="tablink" onclick="openTab('tab1')">Luas Segitiga</button>
+            <button class="tablink" onclick="openTab('tab2')">Keliling Segitiga</button>
+        </div>
+        <div id="tab1" class="tabcontent">
+            <div class="container">
+                <div class="imagestyle">
+                    <img src="image_luas_segitiga.jpg" alt="Italian Trulli" style="height:128px; "/>
+                </div>
+                <form id="triangleForm">
+                    <label for="sideA1">Sisi A:</label>
+                    <input type="number" id="sideA1" required>
+        
+                    <label for="sideB1">Sisi B:</label>
+                    <input type="number" id="sideB1" required>
+                </form>
+                <div id="result1"></div>
+                <div class="center">
+                    <button type="button" onclick="calculateTheAreaOfTriangle()">Hitung</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab2" class="tabcontent">
+            <div class="container">
+                <div class="imagestyle">
+                    <img src="image_keliling_seigitiga.jpeg" alt="Italian Trulli" style="height:128px; "/>
+                </div>
+                <form id="triangleForm">
+                    <label for="sideA2">Sisi A:</label>
+                    <input type="number" id="sideA2" required>
+        
+                    <label for="sideB2">Sisi B:</label>
+                    <input type="number" id="sideB2" required>
+        
+                    <label for="sideC2">Sisi C:</label>
+                    <input type="number" id="sideC2" required>
+                </form>
+                <div id="result2"></div>
+                <div class="center">
+                    <button type="button" onclick="calculateThePerimeterOfTriangle()">Hitung</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
